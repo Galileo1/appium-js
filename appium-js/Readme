@@ -4,6 +4,12 @@ https://watirmelon.blog/2016/01/04/webdriverjs-mocha-in-es2015/
 
 
 
+global expect
+https://github.com/chaijs/chai/issues/891
+https://github.com/mochajs/mocha/issues/782
 
+https://github.com/yandex/mocha-parallel-tests/issues/74
 
-
+#run tests
+appium-js\appium-js [master ≡ +1 ~2 -2 !]> node .\node_modules\mocha\bin\mocha --recursive .\test\
+# gulp test

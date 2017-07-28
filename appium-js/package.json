@@ -4,19 +4,29 @@
   "description": "test project for appium and js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register"
+    "test1": "mocha --compilers js:babel-core/register",
+    "test": "node .\node_modules\\mocha\\bin\\mocha --recursive"
   },
   "author": "varun",
   "license": "ISC",
   "devDependencies": {
     "appium": "1.6.5",
-    "babel-core": "^6.25.0",
-    "babel-preset-es2015": "^6.24.1",
-    "bluebird": "^3.5.0",
+    "babel-core": "6.25.0",
+    "babel-preset-es2015": "6.24.1",
+    "bluebird": "3.5.0",
     "chai": "4.1.0",
     "chai-as-promised": "7.1.1",
     "grunt": "1.0.1",
     "lodash": "4.17.4",
     "mocha": "3.4.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-mocha": "4.3.1"
   }
 }
