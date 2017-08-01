@@ -13,3 +13,9 @@ https://github.com/yandex/mocha-parallel-tests/issues/74
 #run tests
 appium-js\appium-js [master ≡ +1 ~2 -2 !]> node .\node_modules\mocha\bin\mocha --recursive .\test\
 # gulp test
+start appium - node .\node_modules\appium\build\lib\main --address '127.0.0.1' --port 4723
+
+resource to look into -
+https://www.npmjs.com/package/wd-android
+
+

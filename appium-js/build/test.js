@@ -1,20 +1,20 @@
 'use strict';
 
 // Utilities:
-var gulp = require('gulp');
-
+const gulp = require('gulp');
+const { spawn } = require('child_process');
 
 // Dependencies:
-var babel = require('babel-core/register');
-var mocha = require('gulp-mocha');
+const babel = require('babel-core/register');
+const mocha = require('gulp-mocha');
 
-module.exports = {
-    //startserver: startserver,
+module.exports = {    
     runtest: runtest
 };
 
 function runtest (reportTaskDone) {
     gulp.src([
+        'test/index.js',
         'test/**/*spec.js'      
     ])
     .pipe(mocha({compilers:babel})
@@ -27,7 +27,4 @@ function runtest (reportTaskDone) {
     .on('end', reportTaskDone);   
 } 
 
-function startserver (reportTaskDone) {
 
-
-}

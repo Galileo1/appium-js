@@ -9,6 +9,11 @@
   },
   "author": "varun",
   "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
   "devDependencies": {
     "appium": "1.6.5",
     "babel-core": "6.25.0",
@@ -16,17 +21,18 @@
     "bluebird": "3.5.0",
     "chai": "4.1.0",
     "chai-as-promised": "7.1.1",
+    "colors": "^1.1.2",
     "grunt": "1.0.1",
     "lodash": "4.17.4",
-    "mocha": "3.4.2"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "mocha": "3.4.2",
+    "wd": "^1.4.0"
   },
   "dependencies": {
+    "appium-adb": "2.25.0",
+    "appium-doctor": "1.4.3",
+    "chai-as-promised": "7.1.1",
     "gulp": "3.9.1",
-    "gulp-mocha": "4.3.1"
+    "gulp-mocha": "4.3.1",
+    "nodeify": "^1.0.1"
   }
 }
